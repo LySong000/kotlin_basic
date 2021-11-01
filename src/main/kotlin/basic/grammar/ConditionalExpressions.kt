@@ -21,6 +21,16 @@ class ConditionalExpressions {
         }
     }
 
+    fun ifOutOfRanges() {
+        val list = listOf("a", "b", "c")
+        if (-1 !in 0..list.lastIndex) {
+            println("-1 is out of range")
+        }
+        // indices is a collection that is index of the list range(eg: 0...size-1)
+        if (list.size !in list.indices) {
+            println("list size is out of valid list indices range")
+        }
+    }
 }
 
 fun main() {
@@ -28,4 +38,5 @@ fun main() {
     println(conditionalExpressions.getBiggest(1, 4))
     println(conditionalExpressions.getBiggestWithKotlinGrammar(4, 5))
     conditionalExpressions.ifRanges()
+    conditionalExpressions.ifOutOfRanges()
 }
