@@ -24,6 +24,18 @@ class Loops {
         }
     }
 
+    fun loopDownTo() {
+        for (index in 9 downTo 0) {
+            println(index)
+        }
+    }
+
+    fun loopStep() {
+        for (index in 0..9 step 3) {
+            println(index)
+        }
+    }
+
 }
 
 fun main() {
@@ -34,4 +46,8 @@ fun main() {
     loops.whileLoop()
     println("Here is loop ranges")
     loops.loopRanges()
+    println("Here is loop down to")
+    loops.loopDownTo()
+    println("Here is loop step")
+    loops.loopStep()
 }
