@@ -18,6 +18,12 @@ class Loops {
         }
     }
 
+    fun loopRanges() {
+        for (index in 1..5) {
+            println(index)
+        }
+    }
+
 }
 
 fun main() {
@@ -26,4 +32,6 @@ fun main() {
     loops.forLoop()
     println("Here is while loop")
     loops.whileLoop()
+    println("Here is loop ranges")
+    loops.loopRanges()
 }
