@@ -2,12 +2,19 @@ package basic.grammar
 
 class Loops {
 
-    val users = listOf<String>("Tom", "Jerry", "George")
+    val users = listOf<String>("Tom", "Jerry", "George", "Tony", "Tim")
 
     fun forLoop() {
         for (user in users) {
             println(user)
         }
+    }
+
+    fun collectionOperation() {
+        users.filter { it.startsWith("T") }
+            .sortedBy { it }
+            .map { it + "Test" }
+            .forEach { println(it) }
     }
 
     fun whileLoop() {
@@ -50,4 +57,6 @@ fun main() {
     loops.loopDownTo()
     println("Here is loop step")
     loops.loopStep()
+    println("Here is collection operation")
+    loops.collectionOperation()
 }
