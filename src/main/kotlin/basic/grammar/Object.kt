@@ -1,4 +1,4 @@
-package basic.grammer
+package basic.grammar
 
 class Object(var x: Double, var y: Double) {
     var sum = x + y

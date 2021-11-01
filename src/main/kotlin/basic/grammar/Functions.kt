@@ -1,4 +1,4 @@
-package basic.grammer
+package basic.grammar
 
 fun sumReturn(x: Int, y: Int): Int {
     return x + y
