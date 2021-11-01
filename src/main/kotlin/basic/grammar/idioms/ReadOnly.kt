@@ -13,9 +13,19 @@ class ReadOnly {
     fun accessMapEntry(): Int? {
         return readOnlyMap()["a"]
     }
+
+    fun iterateMap() {
+        val readOnlyMap = readOnlyMap()
+        for ((k, v) in readOnlyMap) {
+            println("$k -> $v")
+        }
+    }
+    
+    
 }
 
 fun main() {
     val readOnly = ReadOnly()
     println(readOnly.accessMapEntry())
+    readOnly.iterateMap()
 }
