@@ -1,4 +1,4 @@
-package basic.grammar
+package basic.grammar.general
 
 class StringTemplates {
 
