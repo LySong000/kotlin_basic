@@ -13,10 +13,19 @@ class ConditionalExpressions {
         return if (x > y) x else y
     }
 
+    fun ifRanges() {
+        val x = 10
+        val y = 15
+        if (x in 1..y) {
+            println("$x in ranges")
+        }
+    }
+
 }
 
 fun main() {
     val conditionalExpressions = ConditionalExpressions()
     println(conditionalExpressions.getBiggest(1, 4))
     println(conditionalExpressions.getBiggestWithKotlinGrammar(4, 5))
+    conditionalExpressions.ifRanges()
 }
