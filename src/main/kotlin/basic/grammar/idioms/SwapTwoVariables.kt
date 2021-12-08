@@ -7,7 +7,7 @@ class SwapTwoVariables {
         var b = 2
         println("Before")
         println("a = $a, b = $b")
-        println("After")
+        println("test pr")
         a = b.also { b = a }
         println("a = $a, b = $b")
     }
